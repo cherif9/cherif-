@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+
+
+
+/* HEADER */
+header {
+    height: 100vh;
+    width: 300px;
+    padding: 15px 30px;
+    background-color: rgb(5, 5, 5);
+    overflow-y: auto;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    transition: 0, 5s;
+    z-index: 100;
+}
+
+/* profile */
+header .profile {
+    text-align: center;
+    margin: 10px 0;
+}
+
+header .profile img {
+    width: 180px;
+    height: 200px;
+    border-radius: 50%;
+    border: 10px solid rgb(29, 25, 25);
+}
+
+header .profile h1 {
+    color: #a07457;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 2;
+}
+
+/* navbar */
+header nav {
+    margin-top: 50px;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 10px;
+    margin: 7px 0;
+    color: #a07457;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+
+header nav ul li a i {
+    margin-right: 10px;
+    font-size: 20px;
+    transition: 0.6s;
+}
+
+header nav ul li a:hover i {
+    color: #520707;
+}
+
+/* END */
+
+
+/* MAIN CONTENT */
+main {
+    margin-left: 300px;
+    background-color: rgb(29, 25, 25);
+    transition: 0.3s;
+
+}
+
+/* Home Section */
+#accueil {
+    height: 525px;
+    width: 100%;
+    background-image: url(images/img2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+#accueil .introduction h1 {
+    padding: 5px;
+    font-size: 40px;
+    color: #520707;
+    font-weight: 550;
+
+}
+
+#accueil .introduction p span {
+    padding: 50px;
+    color: #242121;
+}
+
+/* END */
+
+
+/* PORTFOLIO */
+#portfolio {
+    background-color:#a07457;
+    padding: 20px;
+    text-align: center;
+}
+
+.title {
+    color: #520707;
+    margin-top: 20px;
+    font-size: 35px;
+}
+
+.worklist {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.work {
+    width: 45%;
+    height: auto;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.work img {
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   background-color:#af8f6c;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.work:hover .layer {
+    opacity: 1;
+}
+
+.layer h3 {
+    margin: 0;
+    color: #520707;
+}
+
+.layer p {
+    margin: 10px 0;
+    color: #242121;
+}
+
+.layer a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+/* END */
+
+
+/* COMPETENCES */
+#competences{
+    width: 100%;
+    height: auto;
+    padding: 100px 12px;
+    background-color: #af8f6c;    
+}
+
+.skill-head{margin-bottom: 70px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+   
+    
+}
+.skill-head h2{
+    margin-bottom: 10px;
+
+}
+.skill-head h2 span{
+    color: sienna;
+}
+.skill-head p{
+    font-size: 13px;
+}
+.skill-main{
+    padding: 30px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 20px;
+    line-height: 2.5;
+}
+.skill-bar .info{
+display: flex;
+justify-content: space-between;
+padding:O 10px;
+}
+
+.skill-bar .bar{
+    width: 100%;
+    height: 10px;
+    border-radius: 25px;
+    position: relative;
+    background-color: tan;
+    margin-top: 5px;
+    line-height: 3;
+}
+.skill-bar .bar span{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    background-color: sienna;
+    border-radius: 25px;
+
+}
+.skill-bar .bar .html{
+    width: 85%;
+    animation: 2s;
+}
+.skill-bar .bar .css{
+    width: 78%;
+    animation: 2s;
+}
+.skill-bar .bar .pt{
+    width: 90%;
+    animation: 2s;
+}
+.skill-bar .bar .it{
+    width: 85%;
+    animation:2s;
+}
+.skill-bar .bar .algo{
+    width: 60%;
+    animation: html  2s;
+}
+.skill-bar .bar .infor{
+    width: 90%;
+    animation: html  2s;
+}
+
+/* END */
+
+
+/* CONTACT */
+#contact{
+    background-color: #520707;
+    padding: 50px 12px;
+}
+#contact .center-text{
+    text-align: center;
+    font-size: 25px;
+}
+#contact .center-text span{
+    color: #af8f6c;
+}
+.contact-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.contact-form form {
+    position: relative;
+    width: 600px;
+}
+
+form input,
+form textarea,
+button{
+    width: 100%;
+    padding: 12px;
+    border: none;
+    outline: none;
+    background: #a07457;
+    margin-bottom: 5px;
+    border-radius: 8px;
+}
+
+form input::placeholder,
+form textarea::placeholder{
+color: black;
+font-size: 15px;
+}
+#contact form button:hover{
+    background-color: #242121;
+}
+
+button {
+    color: black;
+    font-size: 18px;
+
+}
